@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6F45382-315B-4D82-A1DF-0326A0000BB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HawgTouch.GaugePack</RootNamespace>
+    <AssemblyName>HawgTouch.GaugePack</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gauges\A10ADIClassicGauge.xaml.cs">
+      <DependentUpon>A10ADIClassicGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10ADIGauge.xaml.cs">
+      <DependentUpon>A10ADIGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10AltimeterGauge.xaml.cs">
+      <DependentUpon>A10AltimeterGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10AoAGauge.xaml.cs">
+      <DependentUpon>A10AoAGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10APUEGTGauge.xaml.cs">
+      <DependentUpon>A10APUEGTGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10APURPMGauge.xaml.cs">
+      <DependentUpon>A10APURPMGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10EngineRPMGauge.xaml.cs">
+      <DependentUpon>A10EngineRPMGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10EngineTempGauge.xaml.cs">
+      <DependentUpon>A10EngineTempGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10FanSpeedGauge.xaml.cs">
+      <DependentUpon>A10FanSpeedGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10FlapsGauge.xaml.cs">
+      <DependentUpon>A10FlapsGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10FuelFlowGauge.xaml.cs">
+      <DependentUpon>A10FuelFlowGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10FuelGauge.xaml.cs">
+      <DependentUpon>A10FuelGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10HSI.xaml.cs">
+      <DependentUpon>A10HSI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10HydGauge.xaml.cs">
+      <DependentUpon>A10HydGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10IASGauge.xaml.cs">
+      <DependentUpon>A10IASGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10ILS.xaml.cs">
+      <DependentUpon>A10ILS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10OilPressureGauge.xaml.cs">
+      <DependentUpon>A10OilPressureGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10TACAN.xaml.cs">
+      <DependentUpon>A10TACAN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10UHF.xaml.cs">
+      <DependentUpon>A10UHF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10VHF.xaml.cs">
+      <DependentUpon>A10VHF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A10VVIGauge.xaml.cs">
+      <DependentUpon>A10VVIGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\P51Speedometer.xaml.cs">
+      <DependentUpon>P51Speedometer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\UH1VerticalSpeed.xaml.cs">
+      <DependentUpon>UH1VerticalSpeed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IHawgTouchGauge.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Gauges\A10ADIClassicGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10ADIGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10AltimeterGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10AoAGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10APUEGTGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10APURPMGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10EngineRPMGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10EngineTempGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10FanSpeedGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10FlapsGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10FuelFlowGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10FuelGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10HSI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10HydGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10IASGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10ILS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10OilPressureGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10TACAN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10UHF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10VHF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\A10VVIGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\P51Speedometer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\UH1VerticalSpeed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\Images\image0.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\HawgTouch\bin\Debug
+copy $(TargetPath) $(SolutionDir)\HawgTouch\bin\Release</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
