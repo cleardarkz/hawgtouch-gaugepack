@@ -19,16 +19,8 @@ namespace HawgTouch.GaugePack.Gauges
 {
     public partial class A10VVIGauge : UserControl, IHawgTouchGauge
     {
-        private GaugeType _Type = GaugeType.OilPressureGauge;
-        private string _DataImportID;
 
-        public GaugeType Type
-        {
-            get
-            {
-                return _Type;
-            }
-        }
+        private string _DataImportID;
 
         public System.Windows.Size Size
         {
