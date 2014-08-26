@@ -19,16 +19,7 @@ namespace HawgTouch.GaugePack.Gauges
 {
     public partial class A10HydGauge : UserControl, IHawgTouchGauge
     {
-        private GaugeType _Type = GaugeType.FuelFlowGauge;
         private string _DataImportID;
-
-        public GaugeType Type
-        {
-            get
-            {
-                return _Type;
-            }
-        }
 
         public System.Windows.Size Size
         {

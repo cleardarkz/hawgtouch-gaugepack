@@ -19,16 +19,7 @@ namespace HawgTouch.GaugePack.Gauges
 {
     public partial class P51Speedometer : UserControl, IHawgTouchGauge
     {
-        private GaugeType _Type = GaugeType.FanSpeedGauge;
         private string _DataImportID;
-
-        public GaugeType Type
-        {
-            get
-            {
-                return _Type;
-            }
-        }
 
         public System.Windows.Size Size
         {
