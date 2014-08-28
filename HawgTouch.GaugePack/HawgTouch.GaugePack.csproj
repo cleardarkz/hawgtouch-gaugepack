@@ -111,6 +111,9 @@
     <Compile Include="Gauges\P51Speedometer.xaml.cs">
       <DependentUpon>P51Speedometer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gauges\UH1ASI.xaml.cs">
+      <DependentUpon>UH1ASI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gauges\UH1VerticalSpeed.xaml.cs">
       <DependentUpon>UH1VerticalSpeed.xaml</DependentUpon>
     </Compile>
@@ -205,6 +208,10 @@
     <Page Include="Gauges\P51Speedometer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\UH1ASI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Gauges\UH1VerticalSpeed.xaml">
       <SubType>Designer</SubType>
