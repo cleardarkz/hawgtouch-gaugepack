@@ -111,6 +111,12 @@
     <Compile Include="Gauges\P51Speedometer.xaml.cs">
       <DependentUpon>P51Speedometer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gauges\UH1GasProducerTach.xaml.cs">
+      <DependentUpon>UH1GasProducerTach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\UH1FuelQuantity.xaml.cs">
+      <DependentUpon>UH1FuelQuantity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gauges\UH1ASI.xaml.cs">
       <DependentUpon>UH1ASI.xaml</DependentUpon>
     </Compile>
@@ -208,6 +214,14 @@
     <Page Include="Gauges\P51Speedometer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gauges\UH1GasProducerTach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Gauges\UH1FuelQuantity.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Gauges\UH1ASI.xaml">
       <Generator>MSBuild:Compile</Generator>
