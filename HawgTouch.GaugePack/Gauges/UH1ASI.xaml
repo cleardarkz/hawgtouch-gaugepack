@@ -237,20 +237,6 @@
             </TextBlock.RenderTransform>
 		<Run Text="140" Foreground="#FFFFFFFF"/>
         </TextBlock>
-        <TextBlock x:Name="Digital" TextAlignment="Left" FontFamily="Digital-7" FontSize="30" Width="Auto" Height="Auto" Canvas.Left="110" Canvas.Top="20">
-            <TextBlock.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF00FF2E" Offset="0"/>
-                    <GradientStop Color="#FF007615" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Foreground>
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <MatrixTransform Matrix="1.33333,0,0,1.33333,91.9189,110.08"/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
-			<Run Text="0"/>
-        </TextBlock>
         <Canvas x:Name="SpeedNeedle" Width="400" Height="400" RenderTransformOrigin="0.5 0.5">
             <!--<Canvas.RenderTransform >
                 <RotateTransform Angle="346.2"></RotateTransform>
