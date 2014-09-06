@@ -422,6 +422,7 @@
 
             <Path Width="4.10938" Height="52.3324" Canvas.Left="54" Canvas.Top="0.7095" Stretch="Fill" Fill="#C7FFFFFF" Data="F1 M 135.976,133.042L 131.866,133.042L 131.866,84.2086L 133.903,80.7095L 135.976,84.2086L 135.976,133.042 Z "/>
         </Canvas>
-    </Canvas>
+    </Canvas>
+
 
 </UserControl>
