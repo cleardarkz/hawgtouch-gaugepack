@@ -114,6 +114,9 @@
     <Compile Include="Gauges\UH1AAU7A.xaml.cs">
       <DependentUpon>UH1AAU7A.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Gauges\F15CIAS.xaml.cs">
+      <DependentUpon>F15CIAS.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gauges\UH1DualTach.xaml.cs">
       <DependentUpon>UH1DualTach.xaml</DependentUpon>
     </Compile>
@@ -222,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Gauges\UH1AAU7A.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Gauges\F15CIAS.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
