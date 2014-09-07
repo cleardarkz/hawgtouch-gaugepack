@@ -166,6 +166,11 @@ function UpdateUH1DualTach(mainPanelDevice)
 	SendData(3002, string.format("%0.4f;%0.4f", mainPanelDevice:get_argument_value(122), mainPanelDevice:get_argument_value(123)))
 end
 
+function UpdateUH1AltimeterAAU7A(mainPanelDevice)
+	SendData(3003, string.format("%0.4f;%0.4f;%0.4f;%0.4f", mainPanelDevice:get_argument_value(178), mainPanelDevice:get_argument_value(179), mainPanelDevice:get_argument_value(180),mainPanelDevice:get_argument_value(182)))
+end
+
+
 
 os.setlocale("ISO-8559-1", "numeric")
 -- State data for export
@@ -221,7 +226,8 @@ function LuaExportActivityNextEvent(t)
 		lDevice:update_arguments()
 		ProcessArguments(lDevice, ImportedData)
 		UpdateUH1GasProducerTach(lDevice)
-        UpdateUH1DualTach(lDevice)
+		UpdateUH1DualTach(lDevice)
+		UpdateUH1AltimeterAAU7A(lDevice)
 		--UpdateFuelGauge(lDevice)
 		--UpdateHSI(lDevice)
 	--	UpdateAltimeter(lDevice)
