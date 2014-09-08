@@ -238,10 +238,16 @@ function LuaExportActivityNextEvent(t)
 
 		FlushData()
 	else
-		logfile:write("GetDevice(0) failed.\n")
+		--logfile:write("GetDevice(0) failed.\n")
+        ProcessFC3Exports()
 	end
 
 	return t
+end
+
+function ProcessFC3Exports()
+    SendData("4001", string.format("%.4f;%.4f", LoGetIndicatedAirSpeed(), LoGetMachNumber()))
+    FlushData()
 end
 
 function ProcessInput()
